@@ -1,8 +1,19 @@
 
 ---
 
-/// See CInterop documentation
-/// for more details of `.def` files
-/// https://kotlinlang.org/docs/reference/native/c_interop.html
-void functionFromCInterop() {}
+typedef struct {
+  int a;
+  double b;
+} MyStruct;
 
+void struct_by_value(MyStruct s) {}
+void struct_by_pointer(MyStruct* s) {}
+
+typedef union {
+  int a;
+  MyStruct b;
+  float c;
+} MyUnion;
+
+void union_by_value(MyUnion u) {}
+void union_by_pointer(MyUnion* u) {}

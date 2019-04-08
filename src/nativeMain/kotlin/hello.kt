@@ -1,9 +1,11 @@
-import interop.functionFromCInterop
+import interop.*
 
 fun main() {
-  /// this is function from C code!
-  functionFromCInterop()
-
   println("Hello Kotlin/Native!")
+
+  struct_by_value()
+  struct_by_pointer()
+  union_by_value()
+  union_by_pointer()
 }
 
