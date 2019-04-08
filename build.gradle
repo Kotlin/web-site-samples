@@ -9,6 +9,10 @@ repositories {
 
 kotlin {
   linuxX64("native") {
+    compilations.main.cinterops {
+      interop 
+    }
+    
     binaries {
       executable()
     }
