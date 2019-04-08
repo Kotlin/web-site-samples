@@ -7,7 +7,7 @@ repositories {
 }
 
 kotlin {
-  linuxX64("native") {
+  mingwX64("native") {
     binaries {
       executable()
     }
