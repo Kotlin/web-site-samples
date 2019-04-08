@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.load.kotlin.computeInternalName
+
 plugins {
     kotlin("multiplatform") version "1.3.21"
 }
@@ -8,6 +10,9 @@ repositories {
 
 kotlin {
   macosX64("native") {
+    val main by compilations.getting
+    val interop by main.cinterops.creating
+    
     binaries {
       executable()
     }
