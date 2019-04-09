@@ -5,8 +5,9 @@ import kotlinx.cinterop.staticCFunction
 fun main() {
   println("Hello Kotlin/Native!")
 
-  accept_fun(staticCFunction<Int, Int> { it + 1})
+  val cFunctionPointer = staticCFunction<Int, Int> { it + 1 }
+  accept_fun(cFunctionPointer)
 
-  val useMe = supply_fun()
-  useMe?.invoke(42)
+  val funFromC = supply_fun() ?: return
+  funFromC(42)
 }
