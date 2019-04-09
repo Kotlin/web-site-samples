@@ -8,7 +8,7 @@ repositories {
 }
 
 kotlin {
-  macosX64("native") {
+  mingwX64("native") {
     compilations.main.cinterops {
       interop 
     }

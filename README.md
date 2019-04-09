@@ -5,7 +5,7 @@ https://kotlinlang.org/docs/tutorials/native/mapping-strings-from-c.html
 
 Use the following command to compile and run the application:
 ```
-./gradlew runDebugExecutableNative
+gradlew runDebugExecutableNative
 ```
 
 ## License
