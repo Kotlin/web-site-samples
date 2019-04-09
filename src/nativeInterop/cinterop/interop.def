@@ -1,8 +1,8 @@
 
 ---
 
-/// See CInterop documentation
-/// for more details of `.def` files
-/// https://kotlinlang.org/docs/reference/native/c_interop.html
-void functionFromCInterop() {}
+typedef int  (*MyFun)(int);
+
+void  accept_fun(MyFun f) {}
+MyFun supply_fun() {}
 

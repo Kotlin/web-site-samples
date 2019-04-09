@@ -1,9 +1,8 @@
-import interop.functionFromCInterop
+import interop.*
 
 fun main() {
-  /// this is function from C code!
-  functionFromCInterop()
-
   println("Hello Kotlin/Native!")
-}
 
+  accept_fun(/*fix me */)
+  supply_fun()
+}
