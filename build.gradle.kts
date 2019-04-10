@@ -9,7 +9,7 @@ repositories {
 kotlin {
   mingwX64("native") {
     binaries {
-      executable()
+      sharedLib()
     }
   }
 }
