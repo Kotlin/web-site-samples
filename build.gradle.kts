@@ -9,7 +9,9 @@ repositories {
 kotlin {
   macosX64("native") {
     binaries {
-      sharedLib()
+      sharedLib {
+        baseName = "native"
+      }
     }
   }
 }
