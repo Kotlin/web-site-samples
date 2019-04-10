@@ -2,12 +2,18 @@
 
 
 An Example project for Kotlin/Native
-https://kotlinlang.org/docs/tutorials/native/basic-kotlin-native-app.html
+https://kotlinlang.org/docs/tutorials/native/dynamic-libraries.html
 
-Use the following command to compile and run the application:
+Use the following command to compile Kotlin code into
+a shared (or dynamic) native C library:
 ```
-gradlew runDebugExecutableNative
+gradlew linkNative
 ```
+and check
+`build/bin/native/debugShared`
+and
+`build/bin/native/releaseShared`
+folders 
 
 ## License
 MIT. See the `LICENSE` file for the full text
