@@ -10,7 +10,7 @@ kotlin {
   mingwX64("native") {
     binaries {
       sharedLib {
-        baseName = "native"
+        baseName = "libnative"
       }
     }
   }
