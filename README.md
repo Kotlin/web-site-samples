@@ -14,6 +14,16 @@ and
 `build/bin/native/releaseShared`
 folders 
 
+The `cpp` folder contains Gradle C++ project
+that uses the Kotlin/Native library. 
+
+To build and execute it run (it expects you have Xcode and its console tools installed)  
+
+```
+./gradlew cpp:run
+```
+
+
 ## License
 MIT. See the `LICENSE` file for the full text
 
