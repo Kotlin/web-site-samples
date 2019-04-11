@@ -7,7 +7,7 @@ repositories {
 }
 
 kotlin {
-  iosArm32("native") {
+  iosArm64("native") {
     binaries {
       framework()
     }
