@@ -1,7 +1,7 @@
 # kotlinlang.org Examples
 
 An Example project for Kotlin/Native
-https://kotlinlang.org/docs/tutorials/native/dynamic-libraries.html
+https://kotlinlang.org/docs/tutorials/native/apple-framework.html
 
 Use the following command to compile Kotlin code into
 a shared (or dynamic) native C library:
@@ -9,9 +9,9 @@ a shared (or dynamic) native C library:
 ./gradlew linkNative
 ```
 and check
-`build/bin/native/debugShared`
+`build/bin/native/debugFramework`
 and
-`build/bin/native/releaseShared`
+`build/bin/native/releaseFramework`
 folders 
 
 ## License
