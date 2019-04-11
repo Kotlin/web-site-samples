@@ -4,15 +4,20 @@ object Object {
   val field = "A"
 }
 
-class Clazz {
-  fun memberFunction(p: Int): ULong = 42UL
+interface Interface {
+  fun iMember() {}
 }
 
-fun forIntegers(b: Byte, s: Short, i: UInt, l: Long) { }
-fun forFloats(f: Float, d: Double) { }
+class Clazz : Interface {
+  fun member(p: Int): ULong? = 42UL
+}
 
-fun strings(str: String) : String? {
+fun forIntegers(b: Byte, s: UShort, i: Int, l: ULong?) { }
+fun forFloats(f: Float, d: Double?) { }
+
+fun strings(str: String?) : String {
   return "That is '$str' from C"
 }
 
-val globalString = "A global String"
+fun acceptFun(f: (String) -> String?) = f("Kotlin/Native rocks!")
+fun supplyFun() : (String) -> String? = { "$it is cool!" }
