@@ -9,7 +9,9 @@ repositories {
 kotlin {
   iosArm32("native") {
     binaries {
-      framework()
+      framework {
+        baseName = "Demo"
+      }
     }
   }
 }
